@@ -34,8 +34,8 @@ $id = $_GET['id'];
         <div class="grupo-muscular">
           <h2>Escolha o Membro</h2>
           <div class="membro">
-            <label><input type="checkbox" name="membro" value="superiores" /> Membros Superiores</label>
-            <label><input type="checkbox" name="membro" value="inferiores" /> Membros Inferiores</label>
+            <label><input type="radio" name="membro" value="superiores" /> Membros Superiores</label>
+            <label><input type="radio" name="membro" value="inferiores" /> Membros Inferiores</label>
           </div>
         </div>
       </div>
