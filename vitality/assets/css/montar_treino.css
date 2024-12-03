@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f5004f;
+}
+
+.back-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #F5004F;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Alinhamento e configuração do formulário */
+main {
+  max-width: 1000px; /* Aumentando a largura do card */
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.treino-info, .grupo-muscular, .config-treino {
+  margin-bottom: 20px;
+}
+
+.treino-info label {
+  font-weight: 500;
+  color: #333;
+}
+
+.treino-info input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #f5004f;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.grupo-muscular h2, .config-treino h2 {
+  font-size: 1.8rem;
+  color: #f5004f;
+  margin-bottom: 10px;
+}
+
+.membro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.membro label {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.membro input {
+  margin-right: 10px;
+}
+
+/* Estilo para as labels no formulário de configuração de treino */
+/* Estilo para as labels no formulário de configuração de treino */
+.exercise-row {
+  display: flex;
+  justify-content: space-between; /* Para distribuir as labels uniformemente */
+  margin-bottom: 15px;
+  gap: 20px; /* Espaçamento entre as labels */
+}
+
+.exercise-row label {
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  text-align: center; /* Centraliza o texto dentro das labels */
+  margin-bottom: 10px; /* Espaço abaixo das labels */
+  font-size: 20px; /* Tamanho ajustado da fonte para 20px */
+  width: 50px; /* Largura fixa para todas as labels */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Estilo para os inputs dentro da configuração de treino */
+.exercise-row input {
+  flex: 2; /* Os inputs ocupam o dobro da largura das labels */
+  padding: 10px;
+  border: 2px solid #f5004f;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%; /* Garante que os inputs ocupem toda a largura disponível */
+}
+
+/* Estilo para a seção de Série, Repetição, Descanso e Carga */
+.series-reps {
+  display: flex;
+  justify-content: space-between; /* Para distribuir as labels e os inputs */
+  gap: 15px; /* Espaçamento entre as labels */
+  width: 100%;
+}
+
+.series-reps label {
+  font-size: 16px; /* Ajustado para garantir legibilidade */
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center; /* Centraliza o texto das labels */
+  width: 50px; /* Largura fixa para todas as labels */
+}
+
+/* Estilo dos inputs na seção de Série, Repetição, Descanso e Carga */
+.series-reps input {
+  flex: 2; /* Os inputs ocupam o dobro da largura das labels */
+  padding: 10px;
+  border: 2px solid #f5004f;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%; /* Garante que os inputs ocupem toda a largura disponível */
+}
+
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.counter button {
+  background-color: #f5004f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.counter input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.descanso-input {
+  width: 80px; /* Largura ajustada */
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px; /* Diminuindo o tamanho da fonte do input de descanso */
+}
+
+/* Estilo para manter as configurações dos aparelhos em linha */
+.config-treino {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os campos */
+  flex-wrap: wrap; /* Permite que os campos se ajustem se houver pouco espaço */
+}
+
+/* Estilo para os labels e inputs dentro da configuração */
+.config-treino label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.config-treino input {
+  width: 60px; /* Define a largura dos inputs para que eles se alinhem */
+  padding: 5px;
+}
+
+.config-item {
+  flex: 1; /* Os itens terão o mesmo tamanho */
+  display: flex;
+  flex-direction: column;
+}
+
+.config-item label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.config-item input {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #f5004f;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-proximo, .btn-voltar, .btn-finalizar {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #f5004f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Estilização básica para os checkboxes */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f5004f; /* Borda rosa */
+  border-radius: 50%; /* Torna o checkbox redondo */
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Aparência ao marcar */
+input[type="checkbox"]:checked {
+  background-color: #f5004f; /* Fundo rosa */
+  border-color: #f5004f; /* Borda rosa */
+}
+
+/* Estilo para os ícones (opcional, se precisar de algo visual interno no checkbox) */
+input[type="checkbox"]:checked::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff; /* Marcador branco */
+  border-radius: 50%; /* Bolinha no centro */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+label {
+  display: block;
+  margin-bottom: 10px; /* Espaço entre os aparelhos */
+}
+/* Estilização do contêiner do card */
+.aparelho-container {
+  display: flex;
+  justify-content: space-between; /* Espaça o nome e o vídeo */
+  align-items: center; /* Centraliza os itens verticalmente */
+  margin-bottom: 20px; /* Espaço entre os cards */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Fundo claro para destacar os cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo do nome do aparelho */
+.aparelho-container label {
+  flex: 1; /* Nome ocupa o espaço restante */
+  font-size: 16px;
+  margin-right: 10px; /* Espaçamento entre o nome e o vídeo */
+}
+
+/* Estilização do vídeo */
+.video-container {
+  display: none; /* Inicialmente o vídeo está oculto */
+  justify-content: flex-end; /* Alinha o vídeo à direita */
+}
+
+.video-container video {
+  width: 300px; /* Tamanho maior do vídeo */
+  height: auto; /* Altura proporcional */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar o vídeo */
+}
+
+/* Estilo do ícone para o vídeo */
+.video-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #f5004f;
+}
+#aparelhos-secao {
+  display: none;
+  margin-bottom: 20px;
+}
+
+#aparelhos-secao h2, #config-secao h2 {
+  font-size: 1.8rem;
+  color: #f5004f;
+  margin-bottom: 10px;
+}
+
+#aparelhos-superiores, #aparelhos-inferiores {
+  margin-bottom: 20px;
+}
+
+#aparelhos-superiores label, #aparelhos-inferiores label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#config-secao {
+  display: none;
+  margin-top: 20px;
+}
+
+#aparelhos-selecionados > div {
+  margin-bottom: 20px;
+}
+
+#aparelhos-selecionados label {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+#aparelhos-selecionados input {
+  width: 60px;
+  padding: 5px;
+  border: 2px solid #f5004f;
+  border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .config-treino {
+    flex-direction: column;
+  }
+
+  .config-item {
+    width: 100%;
+  }
+
+  .exercise-row {
+    flex-direction: column;
+    gap: 10px; /* Menor espaçamento entre os inputs no mobile */
+  }
+
+  .exercise-row label {
+    font-size: 12px; /* Ajuste adicional para labels em telas menores */
+  }
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .series-reps {
+    flex-direction: column; /* Coloca os elementos em coluna em telas menores */
+    gap: 10px; /* Menor espaçamento entre os inputs no mobile */
+  }
+
+  .series-reps label {
+    font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .series-reps input {
+    width: 100%; /* Garante que os inputs ocupem toda a largura disponível */
+  }
+}

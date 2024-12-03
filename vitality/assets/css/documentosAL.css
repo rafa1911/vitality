@@ -1,0 +1,239 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #dfe9f5;
+    margin-left: 80px; /* Space for the sidebar */
+    transition: margin-left 0.3s ease;
+}
+/* Estilo do Cabeçalho */
+#page-header {
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo do Formulário */
+.document-form {
+    background: #fff;
+    padding: 15px; /* Reduzido */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px; /* Reduzido */
+    margin: 0 auto;
+}
+
+/* Estilo do Texto da Descrição */
+.document-form textarea {
+    width: 100%; /* Garantir que a área de texto ocupe a largura total do container */
+    font-size: 16px;
+    padding: 12px; /* Aumentar o padding para mais conforto ao digitar */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px; /* Espaço abaixo do campo de descrição */
+    resize: vertical; /* Permitir que o usuário ajuste a altura do campo de texto */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+/* Ajuste do Label para Descrição */
+.document-form label[for="description"] {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 500; 
+}
+
+/* Estilo do Input de Arquivo */
+.document-form input[type="file"] {
+    display: none; /* Oculta o input padrão */
+}
+
+/* Estilo do Label de Envio de Arquivo */
+.document-form label[for="document"] {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px; /* Espaço abaixo do label */
+    font-weight: 500; 
+}
+
+/* Estilo do Botão Personalizado */
+.custom-file-upload {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px; /* Ajuste o padding para diminuir o tamanho */
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    color: #fff;
+    background-color: #F5004F; 
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Espaço abaixo do botão */
+    width: 170px;
+    height: 40px;
+}
+
+.custom-file-upload:hover {
+    background-color: #c40036; 
+}
+
+.custom-file-upload i {
+    margin-right: 6px; /* Espaço entre o ícone e o texto */
+}
+
+/* Estilo do Botão de Envio */
+.btn-cancel {
+    display: block;
+    width: 100%;
+    background-color: #F5004F;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-button {
+    display: block;
+    width: 100%;
+    background-color: #F5004F;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #c40036;
+}
+
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #F5004F;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Container para botões lado a lado */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões no container */
+    align-items: center; /* Alinha os botões verticalmente */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Espaçamento acima do container */
+}
+
+/* Container para botões */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Garante que os botões fiquem nos extremos do container */
+    align-items: center; /* Alinha os botões verticalmente */
+    margin-top: 20px; /* Espaçamento acima do container */
+}
+
+/* Estilo individual dos botões */
+.btn-cancel, .submit-button {
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 100px; /* Define uma largura mínima */
+    text-align: center; /* Centraliza o texto no botão */
+}
+
+.btn-cancel {
+    background-color: #F5004F; /* Cor do botão cancelar */
+    color: white; /* Cor do texto */
+}
+
+.submit-button {
+    background-color: #F5004F; /* Cor do botão enviar */
+    color: white; /* Cor do texto */
+}
+
+
+
+
+
+.btn {
+    font-size: 1em; /* Tamanho menor do texto */
+    padding: 8px 12px; /* Menor espaçamento interno */
+    margin: 0 10px; /* Espaçamento entre botões */
+    background-color: #F5004F; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 15px; /* Bordas arredondadas */
+    cursor: pointer; /* Alteração do cursor */
+    transition: background-color 0.3s ease; /* Animação no hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 190px; /* Largura mais fina */
+    height:75px; /* Altura definida */
+    text-align: center; /* Centraliza o texto no botão */
+}
+.popup-content {
+    background: white;
+    padding: 40px; /* Aumenta o padding para mais espaço interno */
+    border-radius: 8px; /* Arredonda os cantos */
+    text-align: center;
+    position: relative;
+    width: 500px; /* Ajusta a largura do popup */
+    max-width: 90%; /* Evita que o popup ultrapasse 90% da tela */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo for muito longo */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px; /* Tamanho do 'x' */
+    color: #333;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.popup-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-content li {
+    margin: 10px 0;
+    text-align: left; /* Alinha o texto à esquerda para facilitar a leitura */
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
